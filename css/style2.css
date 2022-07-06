@@ -47,6 +47,17 @@ p.ejemplo{
 
 /* Cabecera ---------- */
 
+.bg-dark{
+    /* No me toma el color  */
+    background-color: black;
+    
+}
+
+#botonera img{
+    width: 20%;
+}
+
+
 .inicio{
     color: black;
     width: 90%%;
@@ -101,7 +112,7 @@ nav ul{
     background-color: white;
 }
 
- .container{  /* cajas para los productos */
+ .containers{  /* cajas para los productos */
     width: 100%;
     display: flex;
     
@@ -176,7 +187,97 @@ nav ul{
     opacity:0.6;
 }
 
-.grupo1{
+
+
+/* Páginas ---------- */
+
+/* Nosotros */
+
+.nosotros{
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.nosotros h2{
+    text-align: center;
+} 
+/* Nuestras Marcas */
+
+.containers-marcas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.containers-marcas img{
+    width: 200px;
+    height: 250px;
+}
+
+/* Catalogo */
+
+/* Contacto */
+
+.contact{
+    /* box-sizing: border-box; */
+    background: url(../img/background1.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.head{
+    background-color: #2E2725;
+    border-radius: 5px;
+    margin-top: -40px;
+    -webkit-box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
+
+}
+
+.effect-1{
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect-1 ~ .Focus-border{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #2E2725;
+    transition: 0.4s;
+}
+
+.effect-1:Focus.effect-1:Focus ~ .Focus-border{
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.btn1{
+    background-color: #2E2725;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 145px;
+}
+
+.btn1:hover{
+    -webkit-box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
+}
+
+/* .grupo1{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -203,45 +304,15 @@ nav ul{
 }
 
 
-/* Páginas ---------- */
-
-/* Nosotros */
-
-.nosotros{
-    background-color: white;
-    display: grid;
-    justify-content: center;
-    
-}
-
-.nosotros h2{
-    text-align: center;
-} 
-/* Nuestras Marcas */
-
-.container-marcas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.container-marcas img{
-    width: 200px;
-    height: 250px;
-}
-
-/* Catalogo */
-
-/* Contacto */
-
 .formulario{
     /* estilos */
-    
+/*     
     text-align: center;
     
     
     
     
-}
+} */ 
 
 
 /* Media queria */
@@ -262,7 +333,7 @@ nav ul{
         flex-direction: column
     }
 
-    .container{
+    .containers{
         display: flex;
         flex-direction: column;
         /* justify-content: center; */
@@ -270,7 +341,7 @@ nav ul{
         
     }
 
-    .container .caja{
+    .containers .caja{
         align-items: center;
     }
 }

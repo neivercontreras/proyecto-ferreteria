@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>FerreMedina</title>
 	<link rel="shortcut icon" href="../img/favicon.png">
+	<!----------------- BOOTSTRAP ----------------------->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!------------------- MI CSS------------------------->
 	<link rel="stylesheet" href="../css/style2.css">
 	
 </head>
@@ -30,41 +33,67 @@
 	</header>
 	
 	<main>
-		<img class="fondo" src="../img/background1.png" alt="fondo ferreteria">
+		<!-- <img class="fondo" src="../img/background1.png" alt="fondo ferreteria"> -->
 	</main>
+	
+	<!------------------------ INICIA FORMULARIO --------------------------->
+	
+	<section class="contact">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-6 mx-auto">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="head text-center text-white">
+										<h3>Contactenos</h3>
+									</div>
+								</div>
+							</div>
+							<div class="form p-3">
+								<div class=" d-flex justify-content-end form-row my-5">
+									<!-- Nombre-->
+									<div class="col-lg-6">
+										<input type="text" class="effect-1" placeholder="Nombre">
+										<span class="Focus-border"></span>
+									</div>
+										<!-- Apellido-->
+									<div class="col-lg-6">
+										<input type="text" class="effect-1" placeholder="Apellido">
+										<span class="Focus-border"></span>
+									</div>
+								</div>
+								<div class="d-flex form-row pb-4">
+									<div class="col-lg-12">
+										<input type="text" class="effect-1" placeholder="Email">
+										<span class="Focus-border"></span>
+									</div>
+								</div>
+								<div class="form-row pt-5">
+									<div class="col-lg-12">
+										<input type="text" class="effect-1" placeholder="Mensaje">
+										<span class="Focus-border"></span>
+										<!--  No se por què sale el span en la barra del msj en la web -->
+									</div>
+								</div>
+								<div class="d-flex justify-content-end form-row pt-4">
+									<div class="col-lg-6">
+										<p> <input type="checkbox"> No Soy un Robot </p>
+									</div>
+									<div class="offset-2 col-lg-4">
+										<button class="btn1">ENVIAR MENSAJE</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<form class="formulario">
-		<p>
-		<label for="nombre">Nombre: </label>
-		<input type="text" name="nombre" placeholder="ingresatunombre"> 
-		</p>
-		
-		<p>
-		<label for="apellido">Apellido: </label>
-		<input type="text" name="apellido" placeholder="ingresatuapellido"> 
-		</p>
-		
-		<p>
-		<label for="Email"> Email:</label>
-		<input type="email" name="Email" placeholder="ingresatuemail">
-		</p>
-		
-		<p>
-		<label for="telefono"> Telefono:</label>
-		<input type="tel" name="telefono" placeholder="ingresatutelefono"> 
-		</p>
-		
-	<h4>Consulta:</h4>
-	
-	<textarea name="comentario" id="" cols="40" rows="10"></textarea>
-	
-	<p>
-	<input type="submit" value="Enviar"> 
-<p>
-	<p>
-		<input type="reset" value="Borrar">
-		</p>
-	</form>
+	<!---------------------------- inicia footer ------------------------------------->
 
 	<footer class="pie">
 		<div class="grupo1">
@@ -106,6 +135,9 @@
 					<img src="../img/instagram.png" alt="link directo al instagram del local"></a>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 <!-- termina body -->
 </html>
