@@ -68,17 +68,6 @@ p.ejemplo{
     justify-content: space-between;
     list-style: none;
 }
-/* .navegacion{ */
-    /* estilos */
-    /* width: 20%;
-    float: right;
-    position: relative;
-    line-height: 40px;
-    display: inline-block;
-    list-style: none;
-    font-size: 2rem;
-    font-weight: 300; */
-/* } */
 
 nav ul{
     list-style: none;
@@ -187,8 +176,6 @@ nav ul{
     opacity:0.6;
 }
 
-
-
 /* Páginas ---------- */
 
 /* Nosotros */
@@ -277,44 +264,6 @@ nav ul{
     box-shadow: -1px 9px 27px -8px rgba(0,0,0,0.75);
 }
 
-/* .grupo1{
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row:  15px;
-  
-
-}
-
-.grupo1 ul{
-    margin: 0;
-    padding: 8px;
-    display: inline-block;
-
-}
-
-.grupo li{
-    width: 100px;
-    margin: 0;
-    padding: ;
-}
-
-.grupo2{
-    text-align: center;
-}
-
-
-.formulario{
-    /* estilos */
-/*     
-    text-align: center;
-    
-    
-    
-    
-} */ 
-
-
 /* Media queria */
 
 @media (max-width:400px){
@@ -336,7 +285,6 @@ nav ul{
     .containers{
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         
     }
