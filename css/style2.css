@@ -7,6 +7,7 @@ body {
   font-size: 12px;
 }
 
+/* Variables ---------- */
 /* Estilos tipograficos ---------- */
 .titulos {
   color: white;
@@ -18,21 +19,12 @@ body {
   background-color: #2E2725;
 }
 
-.precioviejo {
-  text-decoration: line-through;
-}
-
-.ejemplo {
-  font-size: 30px;
-}
-
-p.ejemplo {
-  font-size: 12px;
-}
-
 /* Cabecera ---------- */
+.navbar .container-fluid {
+  flex-wrap: nowrap;
+}
+
 .bg-dark {
-  /* No me toma el color  */
   background-color: black;
 }
 
@@ -85,17 +77,6 @@ nav ul .logo a img {
   font-size: 20px;
   font-weight: bold;
 }
-.contend .preciocaja {
-  background-color: red;
-  padding: 5px;
-  text-align: center;
-}
-.contend .preciocaja2 {
-  background-color: lightgray;
-  padding: 5px;
-  text-align: center;
-  font-weight: bold;
-}
 
 /* Pie ---------- */
 .pie {
@@ -129,6 +110,11 @@ nav ul .logo a img {
   background-color: white;
   display: grid;
   justify-content: center;
+  padding: 5px 0px;
+  margin: 2rem;
+}
+.nosotros p {
+  margin: 1rem;
 }
 
 .nosotros h2 {
@@ -206,6 +192,35 @@ nav ul .logo a img {
 }
 
 /* Media queria */
+@media (max-width: 750px) {
+  div ul {
+    display: none;
+  }
+  .nosotros p {
+    font-size: 15px;
+    margin: 10px;
+    padding: auto;
+  }
+  .contend .containers {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .containers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containers .caja {
+    align-items: center;
+  }
+  .pie .grupo1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 400px) {
   div ul {
     display: none;
@@ -222,6 +237,7 @@ nav ul .logo a img {
   .containers {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .containers .caja {
