@@ -110,11 +110,19 @@ nav ul{
 }
 
 /* Estructura ---------- */
+.contend{
+    background-color: $color-text;
 
-// .bg-404{
-   // background: url(../img/bg-404.svg);
-   // background-size: cover;
-   // height: 100vh;
+    .fondo{
+    width: 100%;
+    height: 50%;
+    }
+}
+
+.bg-404{
+    background: url(../img/bg-404.svg);
+    background-size: cover;
+    height: 100vh;
 }
 /* Pie ---------- */
 
@@ -180,7 +188,7 @@ nav ul{
 /* Contacto */
 
 .contact{
-    /* box-sizing: border-box; */
+    
     background: url(../img/background1.png);
     background-size: 100% 100%;
     width: 100%;
@@ -242,6 +250,16 @@ nav ul{
 	}
 }
 
+.btn1-404{
+    @extend .btn1;
+    background: #F0B823;
+    margin: 80vh;
+    &:hover {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(196,147,22,1);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(196,147,22,1);
+        box-shadow: 10px 10px 5px 0px rgba(196,147,22,1);
+        }
+}
 
 /* Media queria */
 
